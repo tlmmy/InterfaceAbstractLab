@@ -11,13 +11,13 @@ import javax.swing.JOptionPane;
  *
  * @author Tim
  */
-public abstract class Course {
+public abstract class ProgrammingCourse {
     private String courseName;
     private String courseNumber;
     private double credits;
 
 
-    public Course(String courseName, String courseNumber) {
+    public ProgrammingCourse(String courseName, String courseNumber) {
         this.courseName = courseName;
         this.courseNumber = courseNumber;
     }

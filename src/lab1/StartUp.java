@@ -25,13 +25,13 @@ public class StartUp {
         needs of the program you may not want to use this.  If you wanted to group all
         of one type of class this would not be a good way to declare them.
         */
-        Course advanced = new AdvancedJavaCourse("Advanced Java", "1");
+        ProgrammingCourse advanced = new AdvancedJavaCourse("Advanced Java", "1");
         System.out.println(advanced.getCourseName() + " " + advanced.getCourseNumber());
         
-        Course introJava = new IntroJavaCourse("Intro to Java", "2");
+        ProgrammingCourse introJava = new IntroJavaCourse("Intro to Java", "2");
         System.out.println(introJava.getCourseName() + " " + introJava.getCourseNumber());
         
-        Course introProgramming = new IntroToProgrammingCourse("Intro to Programming", "3");
+        ProgrammingCourse introProgramming = new IntroToProgrammingCourse("Intro to Programming", "3");
         System.out.println(introProgramming.getCourseName() + " " + introProgramming.getCourseNumber());
     }
 }

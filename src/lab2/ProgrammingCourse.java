@@ -9,7 +9,7 @@ package lab2;
  *
  * @author l152student
  */
-public interface Course {
+public interface ProgrammingCourse {
     public abstract String getCourseName();
     public abstract void setCourseName(String courseName);
     public abstract String getCourseNumber();
