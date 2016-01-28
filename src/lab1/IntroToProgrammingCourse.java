@@ -16,16 +16,7 @@ public class IntroToProgrammingCourse extends ProgrammingCourse {
     }
     
     
-    @Override
- public void setPrerequisites(String prerequisites) {
-        
-    }
- 
- @Override
-    public String getPrerequisites() {
-        return "No prequisites for this course";
-        
-    }
+
    
 
 
