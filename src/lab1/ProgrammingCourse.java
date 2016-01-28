@@ -15,6 +15,7 @@ public abstract class ProgrammingCourse {
     private String courseName;
     private String courseNumber;
     private double credits;
+    private String prerequisites;
 
 
     public ProgrammingCourse(String courseName, String courseNumber) {
@@ -30,9 +31,20 @@ public abstract class ProgrammingCourse {
     }
 
 
-    public abstract String getPrerequisites() ;
+    
+ public void setPrerequisites(String prerequisites) {
+        if(prerequisites == null || prerequisites.length() == 0) {
+            JOptionPane.showMessageDialog(null,
+                    "Error: prerequisites cannot be null of empty string");
+            System.exit(0);
+        }
+        this.prerequisites = prerequisites;
+    }
+ 
 
-    public abstract void setPrerequisites(String prerequisites);
+    public String getPrerequisites() {
+        return prerequisites;
+    }
 
     public double getCredits() {
         return credits;
